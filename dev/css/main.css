@@ -161,6 +161,14 @@ body {
 .form__button:hover {
   background-color: rgba(100,100,100,.137)
 }
+.brand-title {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px
+}
 .brands {
   text-align: center
 }

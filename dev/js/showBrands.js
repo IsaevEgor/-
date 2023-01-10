@@ -3,6 +3,11 @@ const myBrandInput = document.getElementById("myBrand");
 
 function showBrands(data) {
 	brandBlock.innerHTML = null;
+	const inputValue = document.getElementById("inputQuery").value;
+	const title = document.createElement("h3");
+	title.innerHTML = `Рейтинг по запросу: "${inputValue}"`;
+	title.classList.add("brand-title")
+	brandBlock.before(title)
 	const brands = data.map(position => position.brand);
 	const myBrandValue = myBrandInput.value;
 	brands.forEach((brand, index) => {
