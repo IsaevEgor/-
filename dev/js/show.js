@@ -20,5 +20,5 @@ function showBrands(data) {
 
 function showTitle(queryValue) {
 	title.classList.remove("_no-visable");
-	title.innerHTML = `Рейтинг по запросу: ${queryValue}`
+	title.innerHTML = `Рейтинг по запросу: "${queryValue}"`
 }
