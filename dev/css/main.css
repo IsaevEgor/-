@@ -161,7 +161,7 @@ body {
 .form__button:hover {
   background-color: rgba(100,100,100,.137)
 }
-.brand-title {
+.title-rating {
   width: 100%;
   max-width: 650px;
   text-align: center;
@@ -191,4 +191,7 @@ body {
 }
 ._error-input {
   border-bottom: 2px solid red
+}
+._no-visable {
+  display: none
 }

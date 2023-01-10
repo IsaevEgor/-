@@ -14,7 +14,7 @@ function validateForm() {
 		alert("Поле запроса не может быть пустым.");
 		return false;
 	} else {
-		input.classList.remove("_error-input");4
+		input.classList.remove("_error-input");
 
 		encodeUrlFunc()
 	}

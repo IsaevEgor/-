@@ -1,13 +1,12 @@
 const brandBlock = document.getElementById("brands");
 const myBrandInput = document.getElementById("myBrand");
 
+const title = document.getElementById("title-rating");
+
 function showBrands(data) {
+	const queryValue = document.getElementById("inputQuery").value;
+	showTitle(queryValue)
 	brandBlock.innerHTML = null;
-	const inputValue = document.getElementById("inputQuery").value;
-	const title = document.createElement("h3");
-	title.innerHTML = `Рейтинг по запросу: "${inputValue}"`;
-	title.classList.add("brand-title")
-	brandBlock.before(title)
 	const brands = data.map(position => position.brand);
 	const myBrandValue = myBrandInput.value;
 	brands.forEach((brand, index) => {
@@ -17,4 +16,9 @@ function showBrands(data) {
 			brandBlock.innerHTML += `<li class="brands__item">${index+1}.${brand}</li>`
 		}
 	});
+}
+
+function showTitle(queryValue) {
+	title.classList.remove("_no-visable");
+	title.innerHTML = `Рейтинг по запросу: ${queryValue}`
 }
